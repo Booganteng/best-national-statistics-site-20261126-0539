@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Provinsi — NUSA DATA</title>
+<meta name="description" content="Sepuluh provinsi berpenduduk terbesar di Indonesia 2024: jumlah penduduk, luas wilayah, dan kepadatan.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-province-limit="10">
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a class="brand-name" href="index.html">NUSA <em>DATA</em></a>
+      <span class="brand-tag">Portal Statistik Indonesia</span>
+    </div>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="penduduk.html">Penduduk</a>
+      <a href="ekonomi.html">Ekonomi</a>
+      <a href="daerah.html" aria-current="page">Provinsi</a>
+      <a href="sumber.html">Sumber &amp; Metode</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <h1>Provinsi</h1>
+    <p class="lede">Indonesia terdiri dari 38 provinsi dan 514 kabupaten/kota. Sepuluh provinsi di bawah ini menampung lebih dari dua pertiga penduduk — dan kontrasnya tajam: DKI Jakarta 16.036 jiwa per km², Riau 79 jiwa per km².</p>
+    <p class="updated">Data terakhir diperbarui <strong><span data-updated></span></strong></p>
+  </div>
+
+  <h2>Sepuluh provinsi berpenduduk terbesar</h2>
+  <p class="section-note">Ketik nama provinsi atau pulau untuk menyaring tabel — misalnya “Jawa” atau “Sumatera”.</p>
+  <div class="filter-row">
+    <label for="province-filter">Cari provinsi</label>
+    <input type="search" id="province-filter" placeholder="misalnya: Jawa, Sumatera, Riau" autocomplete="off">
+    <span class="filter-count" id="province-count">10 dari 10 provinsi ditampilkan</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>Provinsi</th><th class="num">Penduduk (jt)</th><th class="num">Luas (km²)</th><th class="num">Jiwa/km²</th></tr></thead>
+      <tbody id="province-rows"></tbody>
+    </table>
+  </div>
+  <p class="source-line">Badan Pusat Statistik, 2024. Kepadatan dihitung dari jumlah penduduk dibagi luas wilayah.</p>
+
+  <div class="method">
+    <strong>Membaca tabel:</strong> Jawa Barat adalah provinsi terpadat penduduknya (49,9 juta jiwa),
+    tetapi DKI Jakarta adalah yang terpadat wilayahnya — 10,6 juta jiwa di atas 661 km².
+    Di ujung lain, Riau dan Sumatera Selatan luas wilayahnya besar dengan kepadatan di bawah 100 jiwa per km².
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <strong>NUSA DATA</strong> — Portal Statistik Indonesia. Angka diolah dari rilis resmi
+    <strong>Badan Pusat Statistik</strong>, <strong>Bank Dunia</strong>, dan <strong>APJII</strong>;
+    setiap angka mencantumkan sumber dan tahunnya. Data terakhir diperbarui
+    <strong><span data-updated></span></strong>. NUSA DATA bukan situs resmi pemerintah.
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

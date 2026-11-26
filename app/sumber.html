@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sumber &amp; Metode — NUSA DATA</title>
+<meta name="description" content="Dari mana angka-angka NUSA DATA berasal, bagaimana angka itu dihitung, dan kapan rilis berikutnya terbit.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a class="brand-name" href="index.html">NUSA <em>DATA</em></a>
+      <span class="brand-tag">Portal Statistik Indonesia</span>
+    </div>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="penduduk.html">Penduduk</a>
+      <a href="ekonomi.html">Ekonomi</a>
+      <a href="daerah.html">Provinsi</a>
+      <a href="sumber.html" aria-current="page">Sumber &amp; Metode</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <h1>Sumber &amp; Metode</h1>
+    <p class="lede">Setiap angka di portal ini dapat dilacak ke rilis resminya. Di bawah ini daftar sumbernya, cara angka dihitung, dan jadwal rilis berikutnya.</p>
+    <p class="updated">Data terakhir diperbarui <strong><span data-updated></span></strong></p>
+  </div>
+
+  <h2>Sumber data</h2>
+  <ul class="source-list">
+    <li><strong>Badan Pusat Statistik (BPS)</strong> — jumlah penduduk, pertumbuhan ekonomi, PDB menurut lapangan usaha, tingkat pengangguran terbuka, kemiskinan, inflasi, harapan hidup, IPM, perdagangan luar negeri, dan angka provinsi. Rilis di bps.go.id.</li>
+    <li><strong>Bank Dunia (World Bank)</strong> — PDB dalam dolar AS dan PDB per kapita, dari basis data World Development Indicators 2024.</li>
+    <li><strong>APJII (Asosiasi Penyelenggara Jasa Internet Indonesia)</strong> — jumlah pengguna internet Indonesia 2024, dari Survei Penetrasi Internet Indonesia.</li>
+  </ul>
+
+  <h2>Bagaimana angka dihitung</h2>
+  <div class="method">
+    <strong>Kepadatan penduduk</strong> = jumlah penduduk dibagi luas wilayah provinsi.
+    <strong>Pertumbuhan ekonomi</strong> = perubahan PDB harga konstan 2010 terhadap tahun sebelumnya.
+    <strong>Tingkat pengangguran terbuka</strong> = penganggur dibagi angkatan kerja, dari Survei Angkatan Kerja Nasional.
+    Angka dibulatkan ke satu desimal; pembulatan dapat membuat jumlah komponen berbeda 0,1 dari totalnya.
+  </div>
+
+  <h2>Kalender rilis berikutnya</h2>
+  <ul class="source-list">
+    <li><strong>Desember 2026</strong> — Inflasi November 2026 dan Neraca Perdagangan Oktober 2026 (BPS).</li>
+    <li><strong>Januari 2027</strong> — Pertumbuhan Ekonomi Triwulan IV-2026 (BPS).</li>
+    <li><strong>Februari 2027</strong> — Tingkat Pengangguran Terbuka Agustus 2026, final (BPS).</li>
+    <li><strong>April 2027</strong> — World Development Indicators 2025 (Bank Dunia).</li>
+  </ul>
+
+  <h2>Tentang portal ini</h2>
+  <p>NUSA DATA adalah portal statistik independen yang menyusun angka-angka resmi Indonesia
+  dalam satu tempat yang mudah dibaca — di desktop maupun di telepon. Portal ini bukan situs
+  resmi pemerintah dan tidak berafiliasi dengan BPS, Bank Dunia, atau APJII. Seluruh isi situs
+  ditulis dan digambar sendiri untuk portal ini; grafik dibuat dari data pada halaman ini,
+  bukan disalin dari situs lain.</p>
+  <p><a href="index.html">&larr; Kembali ke Beranda</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <strong>NUSA DATA</strong> — Portal Statistik Indonesia. Angka diolah dari rilis resmi
+    <strong>Badan Pusat Statistik</strong>, <strong>Bank Dunia</strong>, dan <strong>APJII</strong>;
+    setiap angka mencantumkan sumber dan tahunnya. Data terakhir diperbarui
+    <strong><span data-updated></span></strong>. NUSA DATA bukan situs resmi pemerintah.
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUSA DATA — Portal Statistik Indonesia</title>
+<meta name="description" content="Angka-angka resmi Indonesia: penduduk, ekonomi, perdagangan, dan provinsi — lengkap dengan sumber dan tahun.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-province-limit="5">
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a class="brand-name" href="index.html">NUSA <em>DATA</em></a>
+      <span class="brand-tag">Portal Statistik Indonesia</span>
+    </div>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="index.html" aria-current="page">Beranda</a>
+      <a href="penduduk.html">Penduduk</a>
+      <a href="ekonomi.html">Ekonomi</a>
+      <a href="daerah.html">Provinsi</a>
+      <a href="sumber.html">Sumber &amp; Metode</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <section class="hero">
+    <h1>Indonesia dalam <em>angka</em></h1>
+    <p>Angka-angka resmi tentang penduduk, ekonomi, dan daerah — dikumpulkan dari rilis Badan Pusat Statistik, Bank Dunia, dan APJII, lengkap dengan sumber dan tahunnya.</p>
+    <div class="hero-facts">
+      <div><strong>281,6 jt</strong>Penduduk (2024)</div>
+      <div><strong>38</strong>Provinsi</div>
+      <div><strong>514</strong>Kabupaten &amp; Kota</div>
+      <div><strong>5,03%</strong>Pertumbuhan ekonomi (2024)</div>
+    </div>
+  </section>
+
+  <h2>Indikator utama</h2>
+  <p class="section-note">Enam angka yang paling sering dicari — masing-masing dengan tahun dan sumbernya.</p>
+  <div class="kpi-grid" id="indicators"></div>
+
+  <h2>Pertumbuhan ekonomi</h2>
+  <p class="section-note">PDB tumbuh 5,03% pada 2024, setelah sempat minus 2,07% pada 2020. Pilih rentang untuk melihat satu dekade penuh.</p>
+  <div class="chart-card">
+    <div class="chart-switch" role="group" aria-label="Rentang tahun">
+      <button type="button" data-years="5" aria-pressed="true">5 tahun</button>
+      <button type="button" data-years="10" aria-pressed="false">10 tahun</button>
+    </div>
+    <div id="growth-chart"></div>
+    <p class="source-line">Badan Pusat Statistik, pertumbuhan PDB harga konstan 2010.</p>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <h2>Penduduk terus bertambah</h2>
+      <p class="section-note">Dari 270,2 juta jiwa pada 2020 menjadi 281,6 juta pada 2024.</p>
+      <div class="chart-card">
+        <div id="home-population-chart"></div>
+        <p class="source-line">Badan Pusat Statistik, estimasi pertengahan tahun.</p>
+      </div>
+    </div>
+    <div>
+      <h2>Provinsi terbesar</h2>
+      <p class="section-note">Lima provinsi berpenduduk terbanyak — tiga di antaranya di Pulau Jawa.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Provinsi</th><th class="num">Penduduk (jt)</th><th class="num">Luas (km²)</th><th class="num">Jiwa/km²</th></tr></thead>
+          <tbody id="province-rows"></tbody>
+        </table>
+      </div>
+      <p><a href="daerah.html">Lihat 10 provinsi terbesar &rarr;</a></p>
+    </div>
+  </div>
+
+  <h2>Rilis terbaru</h2>
+  <p class="section-note">Publikasi statistik terbaru yang masuk ke portal ini.</p>
+  <ul class="releases" id="releases"></ul>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <strong>NUSA DATA</strong> — Portal Statistik Indonesia. Angka diolah dari rilis resmi
+    <strong>Badan Pusat Statistik</strong>, <strong>Bank Dunia</strong>, dan <strong>APJII</strong>;
+    setiap angka mencantumkan sumber dan tahunnya. Data terakhir diperbarui
+    <strong><span data-updated></span></strong>. NUSA DATA bukan situs resmi pemerintah.
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Penduduk — NUSA DATA</title>
+<meta name="description" content="Jumlah penduduk Indonesia 2015–2024, struktur umur, dan sepuluh provinsi terbesar.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-province-limit="10">
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a class="brand-name" href="index.html">NUSA <em>DATA</em></a>
+      <span class="brand-tag">Portal Statistik Indonesia</span>
+    </div>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="penduduk.html" aria-current="page">Penduduk</a>
+      <a href="ekonomi.html">Ekonomi</a>
+      <a href="daerah.html">Provinsi</a>
+      <a href="sumber.html">Sumber &amp; Metode</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <h1>Penduduk &amp; Demografi</h1>
+    <p class="lede">281,6 juta jiwa pada 2024 — negara keempat terpadat di dunia. Sebagian besar berada di usia kerja, dan lebih dari separuhnya tinggal di kota.</p>
+    <p class="updated">Data terakhir diperbarui <strong><span data-updated></span></strong></p>
+  </div>
+
+  <h2>Jumlah penduduk 2015–2024</h2>
+  <p class="section-note">Penduduk bertambah sekitar 2,9 juta jiwa setiap tahun dalam satu dekade terakhir.</p>
+  <div class="chart-card">
+    <div id="population-chart"></div>
+    <p class="source-line">Badan Pusat Statistik, estimasi pertengahan tahun, juta jiwa.</p>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <h2>Struktur umur</h2>
+      <p class="section-note">68,9% penduduk berada di usia kerja (15–64 tahun) — bonus demografi yang puncaknya diperkirakan terjadi pada 2030-an.</p>
+      <div class="chart-card">
+        <div id="age-bars"></div>
+        <p class="source-line">Badan Pusat Statistik, 2024.</p>
+      </div>
+    </div>
+    <div>
+      <h2>Siapa penduduk Indonesia</h2>
+      <p class="section-note">Kesehatan, pendidikan, dan kehidupan sehari-hari — sembilan angka yang merangkumnya.</p>
+      <div class="kpi-grid" id="people-facts" style="grid-template-columns: 1fr 1fr;"></div>
+    </div>
+  </div>
+
+  <h2>Sepuluh provinsi terbesar</h2>
+  <p class="section-note">Jawa Barat, Jawa Timur, dan Jawa Tengah saja menampung 129,6 juta jiwa — 46% penduduk Indonesia. Ketik di bawah untuk mencari provinsi.</p>
+  <div class="filter-row">
+    <label for="province-filter">Cari provinsi</label>
+    <input type="search" id="province-filter" placeholder="misalnya: Jawa, Sumatera, Riau" autocomplete="off">
+    <span class="filter-count" id="province-count">10 dari 10 provinsi ditampilkan</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>Provinsi</th><th class="num">Penduduk (jt)</th><th class="num">Luas (km²)</th><th class="num">Jiwa/km²</th></tr></thead>
+      <tbody id="province-rows"></tbody>
+    </table>
+  </div>
+  <p class="source-line">Badan Pusat Statistik, 2024. Kepadatan dihitung dari jumlah penduduk dibagi luas wilayah.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <strong>NUSA DATA</strong> — Portal Statistik Indonesia. Angka diolah dari rilis resmi
+    <strong>Badan Pusat Statistik</strong>, <strong>Bank Dunia</strong>, dan <strong>APJII</strong>;
+    setiap angka mencantumkan sumber dan tahunnya. Data terakhir diperbarui
+    <strong><span data-updated></span></strong>. NUSA DATA bukan situs resmi pemerintah.
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

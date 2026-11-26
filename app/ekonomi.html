@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ekonomi — NUSA DATA</title>
+<meta name="description" content="PDB Indonesia, pertumbuhan ekonomi 2015–2024, struktur lapangan usaha, perdagangan, dan ketenagakerjaan.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a class="brand-name" href="index.html">NUSA <em>DATA</em></a>
+      <span class="brand-tag">Portal Statistik Indonesia</span>
+    </div>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="penduduk.html">Penduduk</a>
+      <a href="ekonomi.html" aria-current="page">Ekonomi</a>
+      <a href="daerah.html">Provinsi</a>
+      <a href="sumber.html">Sumber &amp; Metode</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <h1>Ekonomi</h1>
+    <p class="lede">PDB Rp20.892 triliun pada 2024 — ekonomi terbesar di Asia Tenggara — dengan pertumbuhan yang bertahan di atas 5% selama tiga tahun berturut-turut.</p>
+    <p class="updated">Data terakhir diperbarui <strong><span data-updated></span></strong></p>
+  </div>
+
+  <h2>Pertumbuhan ekonomi 2015–2024</h2>
+  <p class="section-note">Satu-satunya kontraksi dalam satu dekade terjadi pada 2020, saat pandemi memangkas PDB 2,07%. Sejak 2022 pertumbuhan kembali di atas 5%.</p>
+  <div class="chart-card">
+    <div class="chart-switch" role="group" aria-label="Rentang tahun">
+      <button type="button" data-years="5" aria-pressed="true">5 tahun</button>
+      <button type="button" data-years="10" aria-pressed="false">10 tahun</button>
+    </div>
+    <div id="growth-chart"></div>
+    <p class="source-line">Badan Pusat Statistik, pertumbuhan PDB harga konstan 2010, persen y-on-y.</p>
+  </div>
+
+  <h2>Dari mana PDB berasal</h2>
+  <p class="section-note">Industri pengolahan adalah lapangan usaha terbesar, menyumbang 18,7% dari PDB 2024. Lima lapangan usaha teratas menyumbang 62,3%.</p>
+  <div class="chart-card">
+    <div id="sector-bars"></div>
+    <p class="source-line">Badan Pusat Statistik, PDB atas dasar harga berlaku 2024, persen dari total.</p>
+  </div>
+
+  <h2>Perdagangan luar negeri</h2>
+  <p class="section-note">Indonesia mencatat surplus perdagangan US$31,0 miliar pada 2024 — ekspor US$264,7 miliar dikurangi impor US$233,7 miliar.</p>
+  <div class="kpi-grid" id="trade-cards"></div>
+  <p class="source-line">Badan Pusat Statistik, 2024.</p>
+
+  <h2>Ketenagakerjaan</h2>
+  <p class="section-note">Angkatan kerja mencapai 152,1 juta orang pada Agustus 2024, dengan tingkat pengangguran terbuka 4,76% — terendah sejak sebelum pandemi.</p>
+  <div class="method">
+    <strong>Yang perlu diketahui:</strong> tingkat pengangguran terbuka (TPT) mengukur penduduk
+    angkatan kerja yang tidak bekerja dan sedang mencari pekerjaan. Angka Agustus 2024 (4,76%)
+    adalah yang terendah dalam satu dekade terakhir.
+  </div>
+  <p class="source-line">Badan Pusat Statistik, Survei Angkatan Kerja Nasional, Agustus 2024.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <strong>NUSA DATA</strong> — Portal Statistik Indonesia. Angka diolah dari rilis resmi
+    <strong>Badan Pusat Statistik</strong>, <strong>Bank Dunia</strong>, dan <strong>APJII</strong>;
+    setiap angka mencantumkan sumber dan tahunnya. Data terakhir diperbarui
+    <strong><span data-updated></span></strong>. NUSA DATA bukan situs resmi pemerintah.
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
